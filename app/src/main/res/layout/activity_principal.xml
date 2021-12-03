@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrincipalActivity">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:background="@drawable/fondo_azul">
+
+
+        <ImageButton
+            android:id="@+id/iBtnBuscar"
+            style="@android:style/Widget.Material.Light.ImageButton"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rounded"
+            app:srcCompat="@drawable/icono_localizacion" />
+
+        <TextView
+            android:id="@+id/txtBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iBtnBuscar"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/buscar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/iBtnCita"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_alignLeft="@id/iBtnBuscar"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/icono_buscar"
+            android:background="@drawable/rounded"/>
+
+        <TextView
+            android:id="@+id/txtCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iBtnCita"
+            android:layout_alignLeft="@id/txtBuscar"
+            android:layout_marginLeft="194dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cita"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/iBtnSOS"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_below="@id/txtCita"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/icono_sos"
+            android:background="@drawable/rounded"/>
+
+        <TextView
+            android:id="@+id/txtSOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iBtnSOS"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/sos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
